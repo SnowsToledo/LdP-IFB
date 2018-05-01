@@ -1,17 +1,10 @@
 package sources;
-/**
- * @author wanghley
- */
-import java.awt.event.KeyListener;
-import java.awt.event.KeyEvent;
-public class Tela extends javax.swing.JFrame implements KeyListener {
-    /**
-     * Creates new form Tela
-     */
+
+public class Tela extends javax.swing.JFrame {
     public Tela() {
         initComponents();
     }
-    int option;
+    static int option;
     static int acao,cont=0;
     static String conteudo,str;
     
@@ -22,12 +15,13 @@ public class Tela extends javax.swing.JFrame implements KeyListener {
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         lblValor = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        text = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        text = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(1, 1, 1));
+        setResizable(false);
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/graphics-1658177_960_720.png"))); // NOI18N
@@ -36,34 +30,31 @@ public class Tela extends javax.swing.JFrame implements KeyListener {
         jLabel1.setText("O que deseja fazer(digite uma opção):)");
         jLabel1.setToolTipText("");
 
-        lblValor.setForeground(new java.awt.Color(1, 1, 1));
+        lblValor.setBackground(new java.awt.Color(1, 1, 1));
+        lblValor.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
+        lblValor.setForeground(new java.awt.Color(255, 0, 0));
         lblValor.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         lblValor.setToolTipText("");
 
-        jScrollPane1.setBackground(new java.awt.Color(1, 1, 1));
-        jScrollPane1.setForeground(new java.awt.Color(255, 0, 0));
-        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-        jScrollPane1.setViewportBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-
-        text.setEditable(false);
-        text.setBackground(new java.awt.Color(1, 1, 1));
-        text.setColumns(20);
-        text.setFont(new java.awt.Font("Serif", 1, 15)); // NOI18N
-        text.setForeground(new java.awt.Color(254, 254, 254));
-        text.setLineWrap(true);
-        text.setRows(5);
-        text.setDoubleBuffered(true);
-        text.setDragEnabled(true);
-        text.setDropMode(javax.swing.DropMode.INSERT);
-        jScrollPane1.setViewportView(text);
-
-        jButton2.setText("jButton2");
+        jButton2.setText("Confirmar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
+
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        jScrollPane2.setAutoscrolls(true);
+
+        text.setEditable(false);
+        text.setBackground(new java.awt.Color(1, 1, 1));
+        text.setColumns(20);
+        text.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        text.setForeground(new java.awt.Color(255, 0, 0));
+        text.setLineWrap(true);
+        text.setRows(5);
+        jScrollPane2.setViewportView(text);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -86,7 +77,7 @@ public class Tela extends javax.swing.JFrame implements KeyListener {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1)))
+                        .addComponent(jScrollPane2)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -94,7 +85,7 @@ public class Tela extends javax.swing.JFrame implements KeyListener {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
                 .addGap(30, 30, 30)
@@ -113,9 +104,6 @@ public class Tela extends javax.swing.JFrame implements KeyListener {
         historia(option,cont);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -145,44 +133,40 @@ public class Tela extends javax.swing.JFrame implements KeyListener {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 t.setVisible(true);
-                t.text.removeAll();
-                t.text.append(texto.intro.trim());                
+                str = texto.intro;
+                t.text.setText(str);   
             }
         });    
     }
-    public static void historia(int decisao,int cont){
+    public void historia(int decisao,int cont){
         Textos text = new Textos();
-        Tela t = new Tela();
-        if(cont == 1){
-            switch(decisao){
-                case 1:
-                    str = text.ini;
-                    t.text.append(t.text.getText().trim()+str.trim());//não atualiza o texto
+        //Tela t = new Tela();
+        if(cont==1){
+            if(decisao==1){
+                this.text.append(text.ini+text.a1);
+            }else{
+                this.text.append(text.nini);
+            }
+        }else if(cont==2){
+            if(decisao==1){
+                this.text.append("\n"+text.b1);
+            }else{
+               this.text.append("\n"+text.b2); 
             }
         }
+            
+                
+
+                
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField lblValor;
     private javax.swing.JTextArea text;
     // End of variables declaration//GEN-END:variables
-
-    @Override
-    public void keyTyped(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void keyPressed(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void keyReleased(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
