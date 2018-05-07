@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-Seja bem-vindo ao jogo que as suas decisões podem matar ou salvar alguém...Só depende de você! Boa sorte!
-=======
 	Seja bem-vindo ao jogo que as suas decisões podem matar ou salvar alguém...Só depende de você! Boa sorte!
->>>>>>> a181e3a695f89d924e5d93c9fb41856809280bff
         Você está pronto?
 	1 - SIM
 	2 - NÃO
@@ -14,46 +10,42 @@ Seja bem-vindo ao jogo que as suas decisões podem matar ou salvar alguém...Só
 	Você escuta explosões... O que você faz:
 	1. Ir ao terraço verificar o que está acontecendo.
 	2. Ficar no apartamento e esperar.
-<<<<<<< HEAD
 	//1. - Morre, com estilhaços de vidro derivados da explosão
-	
 	//2. Você fica no seu apartamento no 14° andar(último andar), mas escuta barulhos no 7° andar e vai verificar...
-	1.Você está no terraço de um prédio, e você deve sobreviver nesse apocalipse. Você desce até a metade do prédio, no caminho você encontra uma arma(sem balas) e uma faca. Qual você leva?
-	1. Arma
-=======
-	//1. Morre, com estilhaços de vidro derivados da explosão
-	//2. Você fica no seu apartamento e sobrevive.Até então.
 	Você desce até a metade do prédio, no caminho você encontra uma arma(com balas) 
 	e uma faca. Qual você leva?
 	1.Arma
->>>>>>> a181e3a695f89d924e5d93c9fb41856809280bff
 	2.Faca
 	3.Ambas
+	//1.Game over..Você não tem capacidade de sobreviver aqui nesse mundo...
+	//2. Game over..Você não sabe o que fazer... Não está preparado(a) para o mundo real...
+	Cresça e quando estiver preparado(a) volte a jogar... ;)
 
-	Você encontra zumbis à sua frente.
+	Você encontra zumbis à sua frente. O que você faz?
 	1. Atira;
 	2. Esfaquea;
 	3. corre;
 	//3.Os zumbis estranhamente não percebem a sua presença e você consegui fugir.
-	//2.Game Over. Você encontra um zumbi mas não sabe usar a sua arma de defesa.
-	//1.Game Over. Você encontra um zumbi mas não sabe usar a sua arma de defesa.
+	//2.Game Over. Você encontra vários zumbis e não consegue matar tantos andarilhos com uma
+	única faca.
+	//1.Game Over. Você encontra vários zumbis mas não sabe usar a sua arma.
 
 	No fim do corredor há um telefone . Sua descisão é:
 1-Você liga pro exército pra chamar um resgate e espera.
 2-Você desce no térreo e tenta sobreviver por si só.
-//2-Game Over. Você encontra um zumbi mas nao sabe usar a sua arma de defesa.
+//2-Game Over. Você encontra vários zumbis, mas não possui habilidades para dar conta 
+de uma orda inteira desses vermes rastejantejantes.
 //1-Agora você deve sobreviver até a chegada do resgate. 
    No caminho da volta você encontra um garoto sendo atacado por um zumbi. O que você faz:
    1.Salva ele;
    2.continua;
-<<<<<<< HEAD
-   //2.Você fica triste pelo garoto mas continua vivo;
-   //1.Você consegui afastar o zumbi, mas depois de um tempo o garoto se transforma e te come.
-=======
-   //2.Você fica triste pelo garoto mas continua vivo.E você chega no terraço.
-   //1.Você consegui afastar o zumbi, mas depois de um tempo o garoto se transforma e te come.
+   //2.Você fica com pena do garoto, mas a sua vida é mais importante nos dias de hoje...
+   Você continua vivo por enquanto..
+   //1.Você consegue deter esses andarilhos e salva o garoto...
+   O garoto pede para que ele te acompanhe até a chegada do resgate
+   e você aceita, sem pensar duas vezes, pois tens um fraco por crianças...
+  Porém, tempos depois ele começa a se transformar e você não percebe...
+  ELE TE MORDE E VOCÊ TAMBÉM É INFECTADO!\n\n Você não é bom o suficiente para esse jogo
+   
    Chegando ao terraço, você espera muito até um ponto em que você fica com fome. O que fazer:
    1.
-   
-   
->>>>>>> a181e3a695f89d924e5d93c9fb41856809280bff
