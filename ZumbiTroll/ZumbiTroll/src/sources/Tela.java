@@ -4,7 +4,7 @@ public class Tela extends javax.swing.JFrame {
     public Tela() {
         initComponents();
     }
-    static int option;
+    static int option,aux,continua=1;
     static int acao,cont=0;
     static String conteudo,str;
     
@@ -100,6 +100,7 @@ public class Tela extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         option = Integer.parseInt(lblValor.getText());
+        lblValor.setText("");
         cont+=1;
         historia(option,cont);
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -139,26 +140,76 @@ public class Tela extends javax.swing.JFrame {
         });    
     }
     public void historia(int decisao,int cont){
-        Textos text = new Textos();
+        Textos texto = new Textos();
         //Tela t = new Tela();
-        if(cont==1){
-            if(decisao==1){
-                this.text.append(text.ini+text.a1);
-            }else{
-                this.text.append(text.nini);
-            }
-        }else if(cont==2){
-            if(decisao==1){
-                this.text.append("\n"+text.b1);
-            }else{
-               this.text.append("\n"+text.b2); 
-            }
-        }
-            
-                
-
-                
-        
+        switch(cont){
+            case 1://introdução
+                if(continua ==1){
+                    if(decisao==1){
+                        this.text.append(texto.ini+texto.a1);
+                    }else{
+                        this.text.append(texto.nini);
+                        continua = 0;
+                    }
+                }
+                break;
+            case 2://ir ao terraço ou ficar no AP
+                if(continua ==1){
+                    if(decisao==1){
+                        this.text.append(texto.b1);
+                        continua = 0;
+                    }else{
+                       this.text.append(texto.b2); 
+                    }
+                }
+                break;
+            case 3://escolha de Armas
+                if(continua ==1){
+                    if(decisao==1){
+                        this.text.append(texto.b2_1);
+                        continua = 0;
+                    }else if(decisao==2){
+                        this.text.append(texto.b2_2);
+                        continua = 0;
+                    }else{
+                        this.text.append(texto.c);
+                    }
+                }
+                break;
+            case 4://Matando o 1° zumbi
+                if(continua ==1){
+                    if(decisao==1){
+                        this.text.append(texto.c1);
+                        continua = 0;
+                    }else if(decisao==2){
+                        this.text.append(texto.c2);
+                        continua = 0;
+                    }else{
+                        this.text.append(texto.c3+texto.d);
+                    }
+                }
+                break;
+            case 5://Chamar exército
+                if(continua ==1){
+                    if(decisao==1){
+                        this.text.append(texto.d1);
+                    }else{
+                        this.text.append(texto.d2);
+                        continua = 0;
+                    }
+                }
+                break;
+            case 6://Ajudar garoto
+                if(continua ==1){
+                    if(decisao==1){
+                        this.text.append(texto.e1);
+                        continua = 0;
+                    }else{
+                        this.text.append(texto.e2);
+                    }
+                }    
+                break;            
+        }    
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
