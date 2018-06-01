@@ -262,11 +262,12 @@ public class Textos {
              + "                                        -----------------\n"
              +"Os tripulantes acham que voce é louco e te jogam do helicóptero.\n";
      String q = "......................................................................................................................................." 
-             +"Era somente uma dor de cabeça por causa da altura..."
-             +".......................................................................................................................................";
-     String endOfPartOne = "Vocês estão indo em direção ao acampamento militar...\n"
+             +"Era somente uma dor de cabeça por causa da altura...\n\n"
+             +"Vocês estão indo em direção ao acampamento militar...\n"
              + "Mas algo estranho acontece...\n\n [Tripulante]: S.O.S. Controle... S.O.S.\n\n"
-             + "Você conseguiu sobreviver à primeira parte do jogo épico ZumbiTroll...\n\n\n"
+             +".......................................................................................................................................\n"
+             +"Digite 1 para continuar...";
+     String endOfPartOne = "Você conseguiu sobreviver à primeira parte do jogo épico ZumbiTroll...\n\n\n"
              + "Muito bem!\n"
              + " Você parece estar preparado para sobreviver por conta própria\n"
              + " nesse mundo pós apocaliptico... Você nos surpreendeu...\n"

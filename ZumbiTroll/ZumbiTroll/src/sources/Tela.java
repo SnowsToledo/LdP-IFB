@@ -1,4 +1,12 @@
 package sources;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.*;
+import java.net.URL;
+import javax.sound.sampled.*;
+import javax.swing.*;
+
 public class Tela extends javax.swing.JFrame {
     public Tela() {
         initComponents();
@@ -133,6 +141,7 @@ public class Tela extends javax.swing.JFrame {
        Textos texto = new Textos();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                Sound("/home/wanghley/Área de Trabalho/ZumbiTroll/Trilha/Discovery_Hit.wav");
                 t.setVisible(true);
                 str = texto.intro;
                 t.text.setText(str);   
@@ -358,13 +367,36 @@ public class Tela extends javax.swing.JFrame {
                     }
                 }
                 break;
+            case 21:
+                if(continua==1){
+                    fim();
+                }
            
             
         }    
     }
     public void fim(){
         this.text.setText(texto.endOfPartOne);
+        Sound("/home/wanghley/Área de Trabalho/ZumbiTroll/Trilha/Yeah_Yeah.wav");
     }
+    public static void Sound(String local) {      
+      try {
+         // Open an audio input stream.           
+          File soundFile = new File(local); //you could also get the sound file with an URL
+          AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);              
+         // Get a sound clip resource.
+         Clip clip = AudioSystem.getClip();
+         // Open audio clip and load samples from the audio input stream.
+         clip.open(audioIn);
+         clip.start();
+      } catch (UnsupportedAudioFileException e) {
+         e.printStackTrace();
+      } catch (IOException e) {
+         e.printStackTrace();
+      } catch (LineUnavailableException e) {
+         e.printStackTrace();
+      }
+   }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
