@@ -1,0 +1,152 @@
+	Seja bem-vindo ao jogo que as suas decisões podem matar ou salvar alguém...Só depende de você! Boa sorte!
+        Você está pronto?
+	1 - SIM
+	2 - NÃO
+     //2.Muito bem, você é fraco, esse jogo não foi feito para você. Volte quando estiver preparado para encarar o mundo real.
+     //1.Você tomou essa decisão... A partir de agora tudo está por sua conta em risco... Salve-se... A aventura começa agora...
+	
+	Em 2025, nos Estados Unidos, Texas. Ocorreu um acidente químico, no qual as pessoas começam a ficar incocientes e com fome de carne.
+	Você está no seu apartamento e precisa sobreviver a esse apocalipse...
+	Primeiramennte você olha a foto de sua amada esposa, Mary. Sempre quando você ver a foto dela, você se inspira, a esperança volta em
+	você. Você escuta explosões... O que você faz:
+	1. Ir ao terraço verificar o que está acontecendo.
+	2. Ficar no apartamento e esperar.
+	//1. - Morre, com estilhaços de vidro derivados da explosão, e você ver na sua mente sua esposa decepicionada
+	//2. Você fica no seu apartamento no 14° andar(último andar), mas escuta barulhos no 7° andar e vai verificar...
+	Você desce até a metade do prédio, no caminho você encontra uma arma(com balas) 
+	e uma faca. Qual você leva?
+	1.Arma
+	2.Faca
+	3.Ambas
+	//1.Game over..Você não tem capacidade de sobreviver aqui nesse mundo...
+	//2. Game over..Você não sabe o que fazer... Não está preparado(a) para o mundo real...
+	Cresça e quando estiver preparado(a) volte a jogar... ;)
+
+	//3.Você não é burro nem nada...Você é muito esperto e optou por levar a arma e a faca juntas...
+Você encontra zumbis à sua frente. O que você faz?
+	1. Atira;
+	2. Esfaquea;
+	3. corre;
+	//3.Os zumbis estranhamente não percebem a sua presença e você consegui fugir.
+	//2.Game Over. Você encontra vários zumbis e não consegue matar tantos andarilhos com uma
+	única faca. Sua esposa se decepciona.
+	//1.Game Over. Você encontra vários zumbis mas não sabe usar a sua arma. Sua esposa se decepiciona.
+
+	No fim do corredor há um telefone . Sua descisão é:
+1-Você liga pro exército pra chamar um resgate e espera.
+2-Você desce no térreo e tenta sobreviver por si só.
+//2-Game Over. Você encontra vários zumbis, mas não possui habilidades, não da conta 
+de uma orda inteira desses vermes rastejantes. 
+//1-Agora você deve sobreviver até a chegada do resgate. 
+   No caminho da volta você encontra um garoto sendo atacado por um zumbi. O que você faz:
+   1.Salvar ele;
+   2.continuar;
+   //2.Você fica com pena do garoto, mas a sua vida é mais importante nos dias de hoje...
+   Você continua vivo por enquanto..
+   //1.Você consegue deter esses andarilhos e salva o garoto...
+   O garoto pede para que ele te acompanhe até a chegada do resgate
+   e você aceita, sem pensar duas vezes, pois tens um fraco por crianças, Mary amava crianças...
+  Porém, tempos depois ele começa a se transformar e você não percebe...
+  ELE TE MORDE E VOCÊ TAMBÉM É INFECTADO!\n\n Você não é bom o suficiente para esse jogo
+   
+  Chegando ao terraço, você espera muito até um ponto em que você fica com fome. O que fazer:
+   1.Você vai atrás de comida
+   2.Você espera por mais um tempo o resgate
+   //1.Você vai até o andar de baixo procurar comida. Você vai entrado de porta em porta até que você acha uma casa com ingredientes
+   suficientes para fazer uma boa refeição.E esse ingredientes são:
+   Macarrao espaguete,arroz,feijão,carne,molho branco,ovo,sal;
+   dessas podem se fazer: arroz e feijão com carne,macarrão com ovo mexido e macarrão à molho branco. Qual delas você escolhe
+   (lembrando que você tem que ser rapido então escolha uma que seja façil e rapido):
+   1.arroz e feijão com carne;
+   2.macarrão com ovo mexido;
+   3.macarrão à molho branco;
+   //3.Game over. Essa é a unica que você não sabe fazer mas sabe que existe.
+   //1.Game over. Você espera muito para terminar a refeição.O resgate aperece e você perde ele.
+   
+   //2.uma boa escolha. Você faz rapidamente e e se satisfaz.Você começa a escutar barulhos. 
+   Você percebe que é o resgate, um helicóptero. Eles jogam uma escada de corda. 
+   Você começa a subir a escada, a foto da sua amada ameaça a cair então você deve escolher:
+   1.Pegar a foto.
+   2.Coninuar e deixar a foto cair.
+   //1. Game Over. Você perde o equilibrio e cai da escada e não adinata nada ter a foto.
+     
+     //2.Voce continua subindo mais rápido e para sua sorte você havia uma outra foto em sua carteira...
+     Ao olhar para o alto observa que os tripulantes do helicóptero começaram a devorar um ao outro e você resolve:
+      1. Continuar subindo e tomar o controle.
+      2. Descer a escada muito rápido
+      //1.FIm de jogo! Você é mordido por um dos tripulantes ao apoiar a mão no assoalho do helicóptero!
+      //2.Você consegue escapar dessa vez...Está começando à anoitecer e você precisa arrumar um lgar seguro para dormir.O que você faz:
+	 1.Voltar para o apartamento em que você estava.
+	 2.procurar com cautela outro apartamento.
+	 3.Ficar no terraço pois é o lugar mais seguro.
+	 1// Game over.Você até que conseguiu dormir mas por vc já ter estado lá os zumbis gravaram seu cheiro e te cercaram.
+	 2//Game over.Por incrivel que pareça so existia um lugar seguro que o que vc estava.
+	 3//Parabens.Vc achou o lugar perfeito,Mas, como sempre vc precisa ter cuidado á noite pq a qualquer hora pode aparecer um zumbi para 
+	 te comer.
+	   Novamente você precisa pedir reforços se n vc n vai aguentar por mto tempo.O que fazer:
+	   1.Tentar sobreviver o máximo que puder até o seu fim.
+	   2.Voltar para a metade do predio para usar o telefone de emergencia.
+	   //1.Game over. Você n aguenta por mto tempo,com isso vc falhou e essa n era o seu objetivo.
+	   //2.Vv continua no seu trajeto.Boa srte.
+	     descendo as escadas vc percebe que tem um monte de zumbis,e só falta um andar até vc chegar no telefone.O que fazer:
+	     1.Jogar algum objeto para chamar atenção deles.
+	     2.Jogar seu perfume na direção aposta a sua.
+	     //1.Game over. Você n espescificou o lugar em que vc ia jogar e acabou chamando a atençãodeles para vc.
+	     //2.Você consegue o que quer.
+	     Espera!!Um zumbi te seguiu o que vc vai fazer:
+	     1.Emboscar e matar ele.
+	     2.Descer mais andares para tentar dispistar eles.
+	     //2.Game over.Não adiantou fazer isso só tnha mais zumbis à sua espera nos andare inferiores.
+	     //1.Vc conseguiu mata elecom uma faca.Mas vc n pode perder tempo.
+	     VocÊ liga para o reforço, e novamente precisa voltar para o terraço.O que fazer:
+	     1.Voltar pelas escadas.
+	     2.Arrumar outro jeito de retornar porque vc quer se aventurar.
+	     //1. Game over.vocÊ encontra os zumbs denovo mas dessa vez eles te notaram.
+	     //2.Você volta pelo elevador,n era uma boa opção mas para a sua sorte n tinha nada lá e vc conseguiu chegar no terraço
+	     são e salvo....
+	    Após chegar ao terraço há mais zumbis lá, cerca de 3 zumbis. O que fazer?
+		1. Enfrenatar os zumbis.
+		2. ficar na espreita.
+	//2. Game Over.  um zumbi aperece atras de voce e te mata
+	//1. OS zumbis estavao muito sem membros e voce consegue mata-los com facilidade
+ 	Voce tem que esperar o resgate. Enquanto voce espera aparece uma pessoa gritando por ajuda
+	voce vai ate ela e tenta acalma-la. Eh uma mulher, e ela esta
+	morrendo de fome, voce explica tudo pra ela. Entao voces vao atras de comida
+	voces avistam um grupo de zumbi ao redor de comida. O que fazer?
+		1. Matar os os zumbis.
+		2. Esperar o resgate.
+	//2.Game over. Coloca varias mensagens estou com fome e um barulho ou uma musica irritante. Ela te morde e voce sangra muito e morre
+	//1.Voces vao ate o zumbis e matam-os.
+	Voces comem o lanche. voce percebe que a moca esta com o braco mordido. o que fazer?
+		1.Mata-la.
+		2.Arrancar o braco
+	//1.Game Over. Você está perdendo sua humanidade... Na hora de matá-la voce fica muito nervoso e nao tem muita coragem
+	e quando voce consegue coragem ela ja se transformou e te mata.  
+	//2. voce consegue arrancar o braco dela mas comeca a sangrar muito, entao voce cobre o ferimento.
+	Voce comeca a escutar um barulho de helipcoptero. EH O RESGATE!!! Voces vao correndo atras da escada do resgate
+	voce tem que ajuda-la. O que fazer?
+		1.Voce sobe primeiro e ajuda a subir
+		2.Deixar ela subi primeiro e ajudar a subir
+		3.Voce carrega-a no colo.
+	//1.Game over. Como diabos voce vai ajudar ela assim??? Voce tenta ajudar perde o equilibrio e cai os dois.
+	//2.Game over. Assim nao ne seu safado. Ela perde o equibrio e cai em cima de voce e cai os dois.
+	//3.Voce tem forca suficiente para carrega-la.
+	Chegando ao helicoptero, a moca essta passando mal. O que fazer?
+		1. Mata-la de uma vez.
+		2.Dar um remedio.
+	//1.Game over. Os tripulantes acham que voce eh louco e te jogam do helicoptero
+	//2.Era so uma dor de cabeca por causa da altura.
+	   
+      Vocês estão indo em direção ao acampamento militar... Mas algo estranho acontece...
+ 	[Tripulante]: S.O.S. Controle... S.O.S.....
+
+	Você conseguiu sobreviver à primeira parte do jogo épico ZumbiTroll...
+	Muito bem! Você parece estar preparado para sobreviver por conta própria nesse mundo pós apocaliptico...
+ 	Você nos surpreendeu... Pensamos que nunca chegaria aqui! Se você chegou aqui na 1ª tentativa,
+	nossos parabéns e esperamos que esteja preparado para nosso novo mundo....
+
+	Créditos...
+  
+   
+   
+   

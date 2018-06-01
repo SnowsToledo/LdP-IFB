@@ -1,5 +1,4 @@
 package sources;
-
 public class Tela extends javax.swing.JFrame {
     public Tela() {
         initComponents();
@@ -7,6 +6,7 @@ public class Tela extends javax.swing.JFrame {
     static int option,aux,continua=1;
     static int acao,cont=0;
     static String conteudo,str;
+    Textos texto = new Textos();
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -140,7 +140,6 @@ public class Tela extends javax.swing.JFrame {
         });    
     }
     public void historia(int decisao,int cont){
-        Textos texto = new Textos();
         //Tela t = new Tela();
         switch(cont){
             case 1://introdução
@@ -216,6 +215,7 @@ public class Tela extends javax.swing.JFrame {
                         this.text.append(texto.f1);
                     }else{
                         this.text.append(texto.e2_2);
+                        continua = 0;
                     }
                 }
                 break;
@@ -223,15 +223,149 @@ public class Tela extends javax.swing.JFrame {
                 if(continua==1){
                     if(decisao==1){
                         this.text.append(texto.f1_1);
+                        continua = 0;
                     }else if(decisao==2){
                         this.text.append(texto.f1_2);
                     }else{
+                        continua = 0;
                         this.text.append(texto.f1_3);
                     }
                 }
                 break;
+            case 9://chegada do resgate
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.f1_2_1);
+                        continua = 0;
+                    }else{
+                        this.text.append(texto.g);
+                    }
+                }
+                break;
+            case 10://Subindo no helicóptero
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.g1);
+                        continua = 0;
+                    }else{
+                        this.text.append(texto.g2);
+                    }
+                }
+                break;
+            case 11://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.g2_1);
+                        continua = 0;
+                    }else if(decisao==2){
+                        this.text.append(texto.g2_2);
+                        continua = 0;
+                    }else{
+                        this.text.append(texto.h);
+                    }
+                }
+                break;
+            case 12://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.h1);
+                        continua = 0;
+                    }else{
+                        this.text.append(texto.i);
+                    }
+                }
+                break;
+            case 13://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.i1);
+                        continua = 0;
+                    }else{
+                        this.text.append(texto.j);
+                    }
+                }
+                break;
+            case 14://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.k);
+                    }else{
+                        this.text.append(texto.j2);
+                        continua=0;
+                    }
+                }
+                break;
+            case 15://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.k1);
+                        continua=0;
+                    }else{
+                        this.text.append(texto.l);
+                    }
+                }
+                break;
+            case 16://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.m);
+                    }else{
+                        this.text.append(texto.l2);
+                        continua=0;
+                    }
+                }
+                break;
+            case 17://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.n);
+                    }else{
+                        this.text.append(texto.m2);
+                        continua=0;
+                    }
+                }
+                break;
+            case 18://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.n1);
+                        continua=0;
+                    }else{
+                        this.text.append(texto.o);
+                    }
+                }
+                break;
+            case 19://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.o1);
+                        continua=0;
+                    }else if(decisao==2){
+                        this.text.append(texto.o2);
+                        continua=0;
+                    }else{
+                        this.text.append(texto.p);
+                    }
+                }
+                break;
+            case 20://
+                if(continua==1){
+                    if(decisao==1){
+                        this.text.append(texto.p1);
+                        continua=0;
+                    }else{
+                        this.text.append(texto.q);
+                    }
+                }
+                break;
+           
+            
         }    
     }
+    public void fim(){
+        this.text.setText(texto.endOfPartOne);
+    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
