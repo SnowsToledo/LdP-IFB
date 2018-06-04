@@ -141,7 +141,7 @@ public class Tela extends javax.swing.JFrame {
        Textos texto = new Textos();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Sound("/home/wanghley/Área de Trabalho/ZumbiTroll/Trilha/Discovery_Hit.wav");
+                Sound("e:\ZumbiTroll\Trilha\Discovery_Hit.wav");
                 t.setVisible(true);
                 str = texto.intro;
                 t.text.setText(str);   
@@ -377,7 +377,7 @@ public class Tela extends javax.swing.JFrame {
     }
     public void fim(){
         this.text.setText(texto.endOfPartOne);
-        Sound("/home/wanghley/Área de Trabalho/ZumbiTroll/Trilha/Yeah_Yeah.wav");
+        Sound("e:\ZumbiTroll\Trilha\Yeah_Yeah.wav");
     }
     public static void Sound(String local) {      
       try {
