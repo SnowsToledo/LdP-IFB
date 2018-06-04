@@ -1,4 +1,6 @@
-﻿	Seja bem-vindo ao jogo que as suas decisões podem matar ou salvar alguém...Só depende de você! Boa sorte!
+﻿Link do fluxograma: https://www.goconqr.com/flowcharts/14048142/image_view?png=true	
+
+Seja bem-vindo ao jogo que as suas decisões podem matar ou salvar alguém...Só depende de você! Boa sorte!
         Você está pronto?
 	1 - SIM
 	2 - NÃO
