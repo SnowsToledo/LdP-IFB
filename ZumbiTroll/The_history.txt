@@ -136,6 +136,8 @@ de uma orda inteira desses vermes rastejantes.
 		2.- Dar um remedio.
 	//1.Game over. Os tripulantes acham que você é louco e te jogam do helicoptéro.
 	//2.Era só uma dor de cabeca por causa da altura.
+		Digite um para continuar:
+			1. Continuar
 	   
       Vocês estão indo em direção ao acampamento militar... Mas algo estranho acontece...
  	[Tripulante]: S.O.S. Controle... S.O.S.....
