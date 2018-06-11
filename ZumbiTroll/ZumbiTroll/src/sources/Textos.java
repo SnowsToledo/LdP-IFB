@@ -1,4 +1,4 @@
-﻿package sources;
+package sources;
 /**
  *
  * @author wanghley
@@ -272,6 +272,15 @@ public class Textos {
              + " nesse mundo pós apocalíptico... Você nos surpreendeu...\n"
              + "Pensamos que nunca chegaria aqui! Se você chegou aqui na 1ª tentativa,\n"
              + "nossos parabéns e esperamos que esteja preparado para nosso novo mundo....";
-     String creditos;
+     String creditos = ".......................................................................................................................................\n"
+             + "Criado por:\n"
+             + "         Wanghley S. Martins\n"
+             + "         Joel Crescêncio\n"
+             + "         Felipe Toledo Neves\n"
+             + "\n"
+             + "Programação e design: Wanghley S. Martins\n"
+             + "Revisão ortográfica: Joel Crescêncio e Felipe Toledo\n"
+             + "História por: Felipe Toledo e Joel Crescêcio\n"
+             + ".......................................................................................................................................\n";
 }
 

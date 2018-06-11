@@ -14,7 +14,9 @@ public class Tela extends javax.swing.JFrame {
     static int option,aux,continua=1;
     static int acao,cont=0;
     static String conteudo,str;
-    Textos texto = new Textos();
+    static Textos texto = new Textos();
+    static Tela t = new Tela();
+    
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -137,16 +139,20 @@ public class Tela extends javax.swing.JFrame {
         }
         //</editor-fold>
        /* Create and display the form */
-       Tela t = new Tela();
-       Textos texto = new Textos();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Sound("e:\ZumbiTroll\Trilha\Discovery_Hit.wav");
-                t.setVisible(true);
-                str = texto.intro;
-                t.text.setText(str);   
+                   
             }
         });    
+    }
+    public static void start(){
+        Sound("c:\\ZumbiTroll\\Trilha\\Discovery_Hit.wav");
+        t.setVisible(true);
+        str = texto.intro;
+        t.text.setText(str);
+    }
+    public static void gameover(){
+        Sound("c:\\ZumbiTroll\\Trilha\\fim.wav");
     }
     public void historia(int decisao,int cont){
         //Tela t = new Tela();
@@ -157,8 +163,8 @@ public class Tela extends javax.swing.JFrame {
                         this.text.append(texto.ini+texto.a1);
                     }else{
                         this.text.append(texto.nini);
-                        continua = 0;
-                        
+                        continua = 0;  
+                        gameover();
                     }
                 }
                 break;
@@ -167,6 +173,7 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.b1);
                         continua = 0;
+                        gameover();
                     }else{
                        this.text.append(texto.b2); 
                     }
@@ -177,9 +184,11 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.b2_1);
                         continua = 0;
+                        gameover();
                     }else if(decisao==2){
                         this.text.append(texto.b2_2);
                         continua = 0;
+                        gameover();
                     }else{
                         this.text.append(texto.c);
                     }
@@ -190,9 +199,11 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.c1);
                         continua = 0;
+                        gameover();
                     }else if(decisao==2){
                         this.text.append(texto.c2);
                         continua = 0;
+                        gameover();
                     }else{
                         this.text.append(texto.c3+texto.d);
                     }
@@ -205,6 +216,7 @@ public class Tela extends javax.swing.JFrame {
                     }else{
                         this.text.append(texto.d2);
                         continua = 0;
+                        gameover();
                     }
                 }
                 break;
@@ -213,6 +225,7 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.e1);
                         continua = 0;
+                        gameover();
                     }else{
                         this.text.append(texto.e2);
                     }
@@ -225,6 +238,7 @@ public class Tela extends javax.swing.JFrame {
                     }else{
                         this.text.append(texto.e2_2);
                         continua = 0;
+                        gameover();
                     }
                 }
                 break;
@@ -233,10 +247,12 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.f1_1);
                         continua = 0;
+                        gameover();
                     }else if(decisao==2){
                         this.text.append(texto.f1_2);
                     }else{
                         continua = 0;
+                        gameover();
                         this.text.append(texto.f1_3);
                     }
                 }
@@ -246,6 +262,7 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.f1_2_1);
                         continua = 0;
+                        gameover();
                     }else{
                         this.text.append(texto.g);
                     }
@@ -256,6 +273,7 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.g1);
                         continua = 0;
+                        gameover();
                     }else{
                         this.text.append(texto.g2);
                     }
@@ -266,9 +284,11 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.g2_1);
                         continua = 0;
+                        gameover();
                     }else if(decisao==2){
                         this.text.append(texto.g2_2);
                         continua = 0;
+                        gameover();
                     }else{
                         this.text.append(texto.h);
                     }
@@ -279,6 +299,7 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.h1);
                         continua = 0;
+                        gameover();
                     }else{
                         this.text.append(texto.i);
                     }
@@ -289,6 +310,7 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.i1);
                         continua = 0;
+                        gameover();
                     }else{
                         this.text.append(texto.j);
                     }
@@ -301,6 +323,7 @@ public class Tela extends javax.swing.JFrame {
                     }else{
                         this.text.append(texto.j2);
                         continua=0;
+                        gameover();
                     }
                 }
                 break;
@@ -309,6 +332,7 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.k1);
                         continua=0;
+                        gameover();
                     }else{
                         this.text.append(texto.l);
                     }
@@ -321,6 +345,7 @@ public class Tela extends javax.swing.JFrame {
                     }else{
                         this.text.append(texto.l2);
                         continua=0;
+                        gameover();
                     }
                 }
                 break;
@@ -331,6 +356,7 @@ public class Tela extends javax.swing.JFrame {
                     }else{
                         this.text.append(texto.m2);
                         continua=0;
+                        gameover();
                     }
                 }
                 break;
@@ -339,6 +365,7 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.n1);
                         continua=0;
+                        gameover();
                     }else{
                         this.text.append(texto.o);
                     }
@@ -349,9 +376,11 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.o1);
                         continua=0;
+                        gameover();
                     }else if(decisao==2){
                         this.text.append(texto.o2);
                         continua=0;
+                        gameover();
                     }else{
                         this.text.append(texto.p);
                     }
@@ -362,6 +391,7 @@ public class Tela extends javax.swing.JFrame {
                     if(decisao==1){
                         this.text.append(texto.p1);
                         continua=0;
+                        gameover();
                     }else{
                         this.text.append(texto.q);
                     }
@@ -376,8 +406,8 @@ public class Tela extends javax.swing.JFrame {
         }    
     }
     public void fim(){
-        this.text.setText(texto.endOfPartOne);
-        Sound("e:\ZumbiTroll\Trilha\Yeah_Yeah.wav");
+        this.text.setText(texto.endOfPartOne+"\n\n"+texto.creditos);
+        Sound("c:\\ZumbiTroll\\Trilha\\Yeah_Yeah.wav");
     }
     public static void Sound(String local) {      
       try {
