@@ -1,9 +1,5 @@
 package sources;
-
-import java.io.File;
-import java.io.IOException;
 import java.io.*;
-import java.net.URL;
 import javax.sound.sampled.*;
 import javax.swing.*;
 
@@ -15,9 +11,7 @@ public class Tela extends javax.swing.JFrame {
     static int acao,cont=0;
     static String conteudo,str;
     static Textos texto = new Textos();
-    static Tela t = new Tela();
-    
-    
+    static Tela t = new Tela();   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -141,7 +135,7 @@ public class Tela extends javax.swing.JFrame {
        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                   
+                   start();
             }
         });    
     }
