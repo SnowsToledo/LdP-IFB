@@ -1,17 +1,28 @@
 package sources;
+import java.applet.*;
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.sound.sampled.*;
-import javax.swing.*;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JWindow;
+import javax.swing.SwingConstants;
+
 
 public class Tela extends javax.swing.JFrame {
     public Tela() {
         initComponents();
     }
     static int option,aux,continua=1;
-    static int acao,cont=0;
+    static int acao,cont=0,denovo,tentativas=1;
     static String conteudo,str;
     static Textos texto = new Textos();
-    static Tela t = new Tela();   
+    static Tela t = new Tela();
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -22,6 +33,8 @@ public class Tela extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         text = new javax.swing.JTextArea();
+        jLabel3 = new javax.swing.JLabel();
+        lblTentativas = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(1, 1, 1));
@@ -60,6 +73,14 @@ public class Tela extends javax.swing.JFrame {
         text.setRows(5);
         jScrollPane2.setViewportView(text);
 
+        jLabel3.setFont(new java.awt.Font("Serif", 1, 20)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel3.setText("Tentativas:");
+
+        lblTentativas.setFont(new java.awt.Font("Serif", 1, 48)); // NOI18N
+        lblTentativas.setForeground(new java.awt.Color(1, 1, 1));
+        lblTentativas.setText("1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -68,34 +89,49 @@ public class Tela extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 712, Short.MAX_VALUE))
+                        .addComponent(jScrollPane2))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(85, 85, 85)
-                        .addComponent(lblValor, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(95, 95, 95)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane2)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(85, 85, 85)
+                                .addComponent(lblValor, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(95, 95, 95)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel1)))
+                        .addGap(0, 141, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(50, 50, 50)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(lblTentativas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTentativas)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(15, 15, 15)
+                                .addComponent(jLabel3)))
+                        .addGap(0, 3, Short.MAX_VALUE))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblValor, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE))
+                    .addComponent(lblValor, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -135,18 +171,29 @@ public class Tela extends javax.swing.JFrame {
        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                   start();
+                start();
             }
         });    
     }
     public static void start(){
-        Sound("c:\\ZumbiTroll\\Trilha\\Discovery_Hit.wav");
+        Sound("Discovery_Hit.wav");
         t.setVisible(true);
         str = texto.intro;
         t.text.setText(str);
     }
-    public static void gameover(){
-        Sound("c:\\ZumbiTroll\\Trilha\\fim.wav");
+    public void gameover(){
+        Sound("fim.wav");
+        denovo = tel();
+        if(denovo==0){
+            tentativas+=1;
+            this.lblTentativas.setText(Integer.toString(tentativas));
+            continua=1;
+            cont=0;
+            option = 0;
+            start();
+        }else{
+            System.exit(0);
+        }
     }
     public void historia(int decisao,int cont){
         //Tela t = new Tela();
@@ -401,9 +448,9 @@ public class Tela extends javax.swing.JFrame {
     }
     public void fim(){
         this.text.setText(texto.endOfPartOne+"\n\n"+texto.creditos);
-        Sound("c:\\ZumbiTroll\\Trilha\\Yeah_Yeah.wav");
+        Sound("src/sounds/Yeah_Yeah.wav");
     }
-    public static void Sound(String local) {      
+    public static void Sound(String local) { 
       try {
          // Open an audio input stream.           
           File soundFile = new File(local); //you could also get the sound file with an URL
@@ -421,13 +468,24 @@ public class Tela extends javax.swing.JFrame {
          e.printStackTrace();
       }
    }
+    public static int tel() {
+
+        ImageIcon icon = new ImageIcon(("zombie.png"));
+        String[] options = {"Sim", "Não"};
+        int x = JOptionPane.showOptionDialog(null, "          Você falhou!\n Deseja tentar novamente?",
+                "GAME OVER",
+                JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, icon, options, options[0]);
+        return x;
+    }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel lblTentativas;
     private javax.swing.JTextField lblValor;
     private javax.swing.JTextArea text;
     // End of variables declaration//GEN-END:variables
