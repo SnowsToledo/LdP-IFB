@@ -5,7 +5,7 @@ package sources;
  */
 public class Textos {
      String  intro = "............................................................................."
-              + ".........................................................."
+              + "................................................................"
              +"\nSeja bem-vindo ao jogo que as suas decisões podem "
                 + "matar ou salvar alguém...\nSó depende de você! Boa sorte!"
              + " Você está pronto?\n 1 - SIM\n 2 - NÃO\n";
@@ -14,7 +14,7 @@ public class Textos {
      String ini = "Você tomou essa decisão... A partir de agora tudo está por sua"
              + " conta em risco...\n Salve-se... A aventura começa agora...\n"
              + "............................................................................."
-             + "..........................................................\n";
+             + "................................................................\n";
      
      String a1 = "\n2025, nos Estados Unidos, Texas...\n"
              + "Ocorreu um acidente químico, no qual as pessoas\n"
@@ -33,11 +33,11 @@ public class Textos {
              + "e você vê, na sua mente, sua esposa decepcionada";
      //seleciona 2 em a1
      String b2 = "............................................................................."
-             + "..........................................................\n"
-             +"\nVocê fica no seu apartamento no 14° andar (último andar), "
+             + "................................................................\n"
+             +"\nVocê fica no seu apartamento no 14° andar (último andar),\n "
              + "mas escuta barulhos no 7° andar e vai verificar...\n"
              + "Você desce até a metade do prédio, no caminho você "
-             + "encontra uma arma(sem balas) e uma faca. Qual você leva?\n" 
+             + "encontra uma arma(sem balas)\ne uma faca. Qual você leva?\n" 
              +"         1. Arma\n"
              +"         2.Faca\n";
      String b2_1 = "\n                                  -----------------\n"
@@ -50,7 +50,7 @@ public class Textos {
              + "Você não sabe o que fazer... Não está preparado(a) para o mundo real...\n"
              + "Cresça e quando estiver preparado(a) volte a jogar ;)\n";
      String c = "............................................................................."
-             + "..........................................................\n"
+             + "................................................................\n"
              +"\nVocê não é burro nem nada...\nVocê é muito esperto e optou por levar a arma e a faca juntas...\n"
              + "Você encontra zumbis à sua frente...O que você faz?\n"
              + "        1. Atirar\n"
@@ -65,14 +65,14 @@ public class Textos {
              + "Você encontra vários zumbis e não consegue matar tantos andarilhos"
              + " com uma única faca...\n";
      String c3 = "............................................................................."
-             + "..........................................................\n"
+             + "................................................................\n"
              +"\nOs zumbis estranhamente não percebem a sua presença e você consegue"
              + " fugir...\n";
      String d = "No fim do corredor há um telefone . Sua decisão é:\n"
              + "        1-Você liga para o exército.\n"
              + "        2-Você desce no térreo e tenta sobreviver por si só.\n";
      String d1 = "............................................................................."
-             + "..........................................................\n"
+             + "................................................................\n"
              +"\nAgora você deve sobreviver até a chegada do resgate. \n"
              + "No caminho da volta você encontra um garoto sendo atacado por zumbis.\nO que você faz:\n"
              + "        1.Salvar ele.\n"
@@ -91,7 +91,7 @@ public class Textos {
              + "Porém, tempos depois ele começa a se transformar e você não percebe...\n"
              + "ELE TE MORDE E VOCÊ TAMBÉM É INFECTADO!\nVocê não é bom o suficiente para esse jogo!\n";
      String e2 = "............................................................................."
-             + ".........................................................."
+             + "................................................................"
              +"\nVocê fica com pena do garoto, mas a sua vida é mais importante nos dias de hoje...\n"
              + "Você continua vivo por enquanto...\n Você decide ir ao terraço...\n"
              + "Chegando lá você espera muito até um ponto em que você fica com fome.\nO que fazer:\n"
@@ -101,13 +101,15 @@ public class Textos {
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n";
      String f1 = "............................................................................."
-             + "..........................................................\n"
+             + "................................................................\n"
              +"Você vai até o andar de baixo procurar comida.\n"
              + " Você vai entrando de porta em porta até que você acha uma casa com ingredientes\n"
              + " suficientes para fazer uma boa refeição. E esses ingredientes são:\n"
              + "    -Macarrão espaguete, arroz, feijão, carne, molho branco, ovo, sal;\n"
-             + "Dessas podem se fazer: arroz e feijão com carne, macarrão com ovo mexido e macarrão à molho branco.\n"
-             + "Qual delas você escolhe(lembrando que você tem que ser rápido então escolha uma que seja fácil e rápida):\n"
+             + "Dessas podem se fazer: arroz e feijão com carne, macarrão com ovo mexido\n"
+             + "e macarrão à molho branco.\n"
+             + "Qual delas você escolhe?\n"
+             + "(lembrando que você tem que ser rápido então escolha uma que seja fácil e rápida):\n"
              + "        1.Arroz e feijão com carne; \n"
              + "        2.Macarrão com ovo mexido;\n"
              + "        3.Macarrão à molho branco;\n";
@@ -120,9 +122,10 @@ public class Textos {
              + "                                        -----------------\n"
              +"\nEssa é a única que você não sabe fazer, mas sabe que é possível.\n";
      String f1_2 = "............................................................................."
-             + "..........................................................\n"
+             + "................................................................\n"
              +"Uma boa escolha. Você faz rapidamente e se satisfaz. \n"
-             + "Você começa a escutar barulhos... Você percebe que é o resgate, um helicóptero. Eles jogam uma escada de corda.\n"
+             + "Você começa a escutar barulhos... Você percebe que é o resgate, um helicóptero.\n"
+             + "Eles jogam uma escada de corda.\n"
              + "Você começa a subir a escada, a foto da sua esposa ameaça a cair então você deve escolher:\n"
              + "        1.Pegar a foto.\n"
              + "        2.Coninuar e deixar a foto cair.\n";
@@ -130,7 +133,7 @@ public class Textos {
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n" 
              +"Você perde o equilíbrio e cai da escada e não adianta nada ter a foto.\n";
-     String g = ".......................................................................................................................................\n"
+     String g = ".............................................................................................................................................\n"
              +"Você continua subindo mais rápido e para sua sorte você lembra que tinha\n uma cópia da foto em sua carteira...\n"
              + "Ao olhar para o alto observa que os tripulantes do helicóptero\n começaram a devorar um ao outro e você resolve:\n"
              + "        1. Continuar subindo e tomar o controle. \n"
@@ -139,8 +142,8 @@ public class Textos {
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n" 
              +"Você é mordido por um dos tripulantes ao apoiar a mão no assoalho do helicóptero! \n";
-     String g2 = "............................................................................."
-             + ".........................................................."
+     String g2 = "..........................................................................."
+             + ".................................................................."
              +"\nVocê consegue escapar dessa vez...\n"
              + "Está começando à anoitecer e você precisa arrumar um lugar seguro para dormir.\n"
              + "O que você faz:\n"
@@ -155,10 +158,11 @@ public class Textos {
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n"
              + "Por incrível que pareça só existia um lugar seguro...\n e era o que você estava.\n";
-     String h = "............................................................................."
-             + "..........................................................\n"
+     String h = "..........................................................................."
+             + "..................................................................\n"
              +"Parabéns! Você achou o lugar perfeito, por ser um lugar aberto você sempre vai precisar ter\n"
-             + " cuidado a noite ficando sempre alerta... A qualquer hora pode aparecer um zumbi para lhe saborear...\n"
+             + " cuidado a noite ficando sempre alerta...\n"
+             + "A qualquer hora pode aparecer um zumbi para lhe saborear...\n"
              + "Novamente você precisa pedir reforços...\nO que fazer:\n"
              + "        1.Tentar sobreviver o máximo que puder até o seu fim.\n"
              + "        2.Voltar para a metade do prédio para usar o telefone de emergência.\n";
@@ -166,8 +170,8 @@ public class Textos {
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n"  
              +"Você não aguenta por muito tempo, com isso você falhou e esse não era o seu objetivo.\n";
-     String i = "............................................................................."
-             + "..........................................................\n"
+     String i = "..........................................................................."
+             + "..................................................................\n"
              +"\nVocê continua no seu trajeto. Boa sorte.\n"
              + "Descendo as escadas você percebe que tem um monte de zumbis,\ne só falta um andar\n"
              + " até você chegar no telefone. O que fazer:\n"
@@ -178,15 +182,15 @@ public class Textos {
              + "                                        -----------------\n" 
              +"Você não especificou o lugar em que você iria jogar\n"
              + " e acabou chamando a atenção deles para você.\n";
-     String j = "............................................................................."
-             + "..........................................................\n"
+     String j = "..........................................................................."
+             + "..................................................................\n"
              +"\nVocê consegue o que quer...\n\n\n"
              + "Espera!!!\nUm zumbi te seguiu, o que você vai fazer:\n"
              + "        1.Emboscar e matar ele.\n"
              + "        2.Descer mais andares para tentar despistar eles.\n";
      
-     String k = "......................................................................................................................................."
-             +"Você conseguiu matar ele com uma faca. Mas você n pode perder tempo.\n"
+     String k = ".............................................................................................................................................\n"
+             +"Você conseguiu matar ele com uma faca. Mas você não pode perder tempo.\n"
      + "Você liga para o reforço, e novamente precisa voltar para o terraço. O que fazer:\n"
              + "        1.Voltar pelas escadas.\n"
              + "        2.Arrumar outro jeito de retornar porque você quer se aventurar.\n";
@@ -198,7 +202,7 @@ public class Textos {
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n"
              +"Você encontra os zumbis de novo, mas dessa vez eles te notaram.\n";
-     String l = ".......................................................................................................................................\n" 
+     String l = ".............................................................................................................................................\n" 
              +"Você volta pelo elevador, não era uma boa opção mas para a sua\n"
              + " sorte não tinha nada lá e você conseguiu chegar no terraço são e salvo....\n"
              + "Após chegar ao terraço há mais zumbis lá, cerca de 3 zumbis. O que fazer?\n"
@@ -208,10 +212,11 @@ public class Textos {
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n"
              +"Um zumbi aparece atrás de você e te mata.\n";
-     String m = ".......................................................................................................................................\n"
-             +"OS zumbis estavam muito sem membros e você consegue mata-los com facilidade\n"
-             + "Você tem que esperar o resgate. Enquanto você espera aparece uma pessoa gritando por ajuda\n"
-             + "você vai até ela e tenta acalma-la. É uma mulher, e ela esta\n"
+     String m = ".............................................................................................................................................\n"
+             +"Os zumbis estavam muito sem membros e você consegue mata-los com facilidade\n"
+             + "Você tem que esperar o resgate.\n"
+             + "Enquanto você espera aparece uma pessoa gritando por ajuda...\n"
+             + "Você vai até ela e tenta acalma-la. É uma mulher, e ela esta\n"
              + "morrendo de fome, você explica tudo pra ela. Então vocês vão atrás de comida\n"
              + "vocês avistam um grupo de zumbi ao redor de comida. O que fazer?\n"
              + "        1. Matar os zumbis.\n"
@@ -220,7 +225,7 @@ public class Textos {
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n"
 + "Ela te morde e você sangra muito e morre.\n";
-     String n = ".......................................................................................................................................\n" 
+     String n = ".............................................................................................................................................\n" 
              +"Vocês vão até os zumbis e mata-os.\n"
              + "Vocês comem o lanche...\n Você percebe que a moça está com o braço mordido.\n"
              + "O que fazer?\n"
@@ -232,15 +237,16 @@ public class Textos {
              +"Você está perdendo sua humanidade...\n"
              + " Na hora de matá-la você fica muito nervoso e não tem muita coragem\n"
              + "e quando você consegue coragem ela já se transformou e te mata.\n";
-     String o = ".......................................................................................................................................\n"
-             +"Você consegue arrancar o braço dela mas começa a sangrar muito, então você cobre o ferimento.\n"
+     String o = ".............................................................................................................................................\n"
+             +"Você consegue arrancar o braço dela mas começa a sangrar muito,\n"
+             + "então você cobre o ferimento.\n"
              + "Você começa a escutar um barulho de helicóptero.\n"
              + "É O RESGATE!!!\n"
              + " Vocês vão correndo atrás da escada do resgate\n"
              + "você tem que ajuda-la. O que fazer?\n"
-             + "        1.Voce sobe primeiro e ajuda ela à subir\n"
+             + "        1.Você sobe primeiro e ajuda ela à subir\n"
              + "        2.Deixar ela subir primeiro e ajudar a subir\n"
-             + "        3.Voce carrega-la no colo.\n";
+             + "        3.Você a carrega no colo.\n";
      String o1 = "\n                                    -----------------\n"
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n" 
@@ -251,36 +257,37 @@ public class Textos {
              + "                                        -----------------\n"
              +"Assim não né!! Acredito que seja mais seu desejo em vê-la subir...\n"
              + "Ela perde o equilíbrio e cai em cima de você..\n Os dois morrem...\n";
-     String p = ".......................................................................................................................................\n"
+     String p = ".............................................................................................................................................\n"
              +"Você tem forca suficiente para carrega-la.\n"
              + "Chegando ao helicóptero, a moça está passando mal. O que fazer?\n"
-             + "        1. Mata-la de uma vez.\n"
-             + "        2.Dar um remédio.\n";
+             + "        1. Dar a ela misericórdia(mercy).\n"
+             + "        2.Dar a ela um remédio que estava em sua mochila.\n";
      String p1 =  "\n                                   -----------------\n"
              + "                                        | GAME OVER |\n"
              + "                                        -----------------\n"
              +"Os tripulantes acham que você é louco e te jogam do helicóptero.\n";
-     String q = "......................................................................................................................................." 
+     String q = ".............................................................................................................................................\n" 
              +"Era somente uma dor de cabeça por causa da altura...\n\n"
              +"Vocês estão indo em direção ao acampamento militar...\n"
              + "Mas algo estranho acontece...\n\n [Tripulante]: S.O.S. Controle... S.O.S.\n\n"
-             +".......................................................................................................................................\n"
+             +".............................................................................................................................................\n"
              +"Digite 1 para continuar...";
      String endOfPartOne = "Você conseguiu sobreviver à primeira parte do jogo épico ZumbiTroll...\n\n\n"
              + "Muito bem!\n"
              + " Você parece estar preparado para sobreviver por conta própria\n"
              + " nesse mundo pós apocalíptico... Você nos surpreendeu...\n"
              + "Pensamos que nunca chegaria aqui! Se você chegou aqui na 1ª tentativa,\n"
-             + "nossos parabéns e esperamos que esteja preparado para nosso novo mundo....";
-     String creditos = ".......................................................................................................................................\n"
+             + "nossos parabéns e esperamos que esteja preparado para nosso novo mundo....\n";
+     String creditos = ".....................................................................................................................................\n"
              + "Criado por:\n"
-             + "         Wanghley S. Martins\n"
+             + "         Wanghley Soares Martins\n"
              + "         Joel Crescêncio\n"
              + "         Felipe Toledo Neves\n"
              + "\n"
              + "Programação e design: Wanghley S. Martins\n"
              + "Revisão ortográfica: Joel Crescêncio e Felipe Toledo\n"
              + "História por: Felipe Toledo e Joel Crescêcio\n"
+             + "Jogo disponível em: https://github.com/Wanghley/LdP-IFB/tree/master/ZumbiTroll\n"
              + ".......................................................................................................................................\n";
 }
 

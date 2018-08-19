@@ -71,11 +71,15 @@ public class Tela extends javax.swing.JFrame {
         text.setForeground(new java.awt.Color(255, 0, 0));
         text.setLineWrap(true);
         text.setRows(5);
+        text.setAutoscrolls(false);
+        text.setFocusable(false);
+        text.setRequestFocusEnabled(false);
+        text.setVerifyInputWhenFocusTarget(false);
         jScrollPane2.setViewportView(text);
 
         jLabel3.setFont(new java.awt.Font("Serif", 1, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(1, 1, 1));
-        jLabel3.setText("Tentativas:");
+        jLabel3.setText("Tentativa:");
 
         lblTentativas.setFont(new java.awt.Font("Serif", 1, 48)); // NOI18N
         lblTentativas.setForeground(new java.awt.Color(1, 1, 1));
@@ -142,7 +146,12 @@ public class Tela extends javax.swing.JFrame {
         option = Integer.parseInt(lblValor.getText());
         lblValor.setText("");
         cont+=1;
-        historia(option,cont);
+        
+        if(cont==22 && option==1){
+            acabou();
+        }else{
+            historia(option,cont);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     public static void main(String args[]) {
@@ -447,8 +456,22 @@ public class Tela extends javax.swing.JFrame {
         }    
     }
     public void fim(){
-        this.text.setText(texto.endOfPartOne+"\n\n"+texto.creditos);
-        Sound("src/sounds/Yeah_Yeah.wav");
+        jScrollPane2.setAutoscrolls(false);
+        Sound("Yeah_Yeah.wav");
+        this.text.setText(texto.endOfPartOne);
+        try {            
+            Thread.sleep(5000);// pausa de 2000 milisegundos
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        try {
+            this.text.setText(texto.creditos);
+            Thread.sleep(5000);// pausa de 2000 milisegundos
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        acabou();
+               
     }
     public static void Sound(String local) { 
       try {
@@ -477,6 +500,13 @@ public class Tela extends javax.swing.JFrame {
                 JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, icon, options, options[0]);
         return x;
     }
+    public static void acabou(){
+        ImageIcon icon = new ImageIcon("zombie.png");
+        String t = "Parabéns!\n Você venceu em "+tentativas+" tentativas";
+        JOptionPane.showMessageDialog(null, t, "Parabéns!", JOptionPane.INFORMATION_MESSAGE, icon);
+        System.exit(0);
+    }
+
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
