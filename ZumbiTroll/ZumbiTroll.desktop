@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ZumbiTroll
+Comment=Execução da aplicação zumbitroll
+TryExec=/home/wanghley/Downloads/dist/ZumbiTroll.sh
+Exec=/home/wanghley/Downloads/dist/ZumbiTroll.sh
+Icon=/home/wanghley/Downloads/Zombie-PNG-Free-Download.png
+Terminal=true
+Type=Application
