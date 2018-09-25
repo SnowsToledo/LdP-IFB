@@ -4,7 +4,13 @@ public class JogoVetores {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner (System.in);
 		String[] vetor = new String[100];// Se tiver mais que 100, aumenta esse numero
-		
+		vetor[0] = "Seja bem-vindo ao jogo que as suas decisões podem matar ou salvar alguém...\nSó depende de você! Boa sorte! Você está pronto? ### 1 ### SIM ### 2 -### NÃO";	
+		vetor[1] = "Você tomou essa decisão... A partir de agora tudo está por sua conta em risco...\n Salve-se... A aventura começa agora...\n".............................................................................................................................................\n\n2025, nos Estados Unidos, Texas... Ocorreu um acidente químico, no qual as pessoas\n"
+             + "começam a ficar inconscientes e com fome de carne humana.\n"
+             + "Você está no seu apartamento e precisa sobreviver a esse apocalipse...\n" +""
+             + "Primeiramente você olha a foto de sua amada esposa, Mary.\nSempre quando você ver a foto dela,"
+             + " você se inspira, a esperança volta em você...\n"
+             + "\nVocê escuta explosões... O que você faz:\n### 1 ### Ir ao terraço verificar o que está acontecendo ### 2 ### Ficar no apartamento e esperar.\n";
 		int tentativas, tt;
 		boolean naoacertou = true;
 
