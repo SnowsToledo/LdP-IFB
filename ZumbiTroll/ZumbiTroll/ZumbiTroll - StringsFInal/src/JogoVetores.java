@@ -22,6 +22,7 @@ public class JogoVetores {
 		
 		vetor[2]="PERDEU-Muito bem, você é fraco, esse jogo não foi feito para você.\n" + 
 				"Volte quando estiver preparado para encarar o mundo real.\n";
+		vetor[3]
 		int tentativas, tt;
 		boolean naoacertou = true;
 
