@@ -22,7 +22,13 @@ public class JogoVetores {
 		
 		vetor[2]="PERDEU-Muito bem, você é fraco, esse jogo não foi feito para você.\n" + 
 				"Volte quando estiver preparado para encarar o mundo real.\n";
-		vetor[3]
+		vetor[3]="PERDEU-Você morre, com estilhaços de vidro derivados da explosão,\n"
+		+ "e você vê, na sua mente, sua esposa decepcionada";
+		vetor[4]="\nVocê fica no seu apartamento no 14° andar (último andar),\n "
+             + "mas escuta barulhos no 7° andar e vai verificar...\n"
+             + "Você desce até a metade do prédio, no caminho você "
+             + "encontra uma arma(sem balas)\ne uma faca. Qual você leva? ### 5 ### Arma ### 6 ### Faca";
+		Vetor[5]=
 		int tentativas, tt;
 		boolean naoacertou = true;
 
